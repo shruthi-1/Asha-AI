@@ -7,7 +7,6 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import Flow
 import re
 import secrets
-import openai
 import os
 import time
 from dotenv import load_dotenv
@@ -17,8 +16,9 @@ load_dotenv(dotenv_path="C:/Users/shrut/OneDrive/Desktop/asha/.env")
 load_dotenv()
 
 # OAuth Configuration
-GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
-GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
+GOOGLE_CLIENT_ID = "915155637703-pgj1r71gbctmk0018s8dif1gugf3ld0k.apps." 
+
+GOOGLE_CLIENT_SECRET =  "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" 
 model = "gemini-1.5"
 
 class GoogleAuthenticator:
